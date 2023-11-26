@@ -27,7 +27,7 @@ if "okan" in strUser:
 else:
     print("başarısız")
     log_at("scenario_02","profil kullanıcı adı kontrolü",0)
-    driver.save_screenshot("./fail/"+"scenario_02_"+time.strftime('%Y-%m-%d %H:%M:%S')+".png")
+    driver.save_screenshot("../fail/"+"scenario_02_"+time.strftime('%Y-%m-%d %H:%M:%S')+".png")
 
 time.sleep(3)
 driver.quit()

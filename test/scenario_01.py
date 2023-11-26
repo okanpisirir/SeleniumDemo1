@@ -32,7 +32,7 @@ if "Ürün" in title:
 else:
     print("başarısız")
     log_at("scenario_01","ürün menü başlık kontrolü",0)
-    driver.save_screenshot("./fail/"+"scenario_01_"+time.strftime('%Y-%m-%d %H:%M:%S')+".png")
+    driver.save_screenshot("../fail/"+"scenario_01_"+time.strftime('%Y-%m-%d %H:%M:%S')+".png")
 
 time.sleep(3)
 driver.quit()
