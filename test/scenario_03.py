@@ -20,7 +20,7 @@ edtProfil.click()
 btnLogout = driver.find_element("xpath",'//*[@id="ctl09_ctl00_lblExitTest"]')
 btnLogout.click()
 link = driver.current_url
-if "zzzz" in link:
+if "Login.aspx" in link:
     log_at("scenario_03","login ekranı dönüş",1)
 else:
     log_at("scenario_03","login ekranı dönüş",0)
