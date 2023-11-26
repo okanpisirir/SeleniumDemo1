@@ -16,6 +16,10 @@ def login_ol(driver,login_type):
         pan_adress = config_data['pan_adress']
         user = config_data['user_dist']
         password = config_data['pass_dist']
+    elif login_type == "hatali_sifre":
+        pan_adress = config_data['pan_adress']
+        user = config_data['user_admin']
+        password = config_data['pass_admin_hatali']
 
 
 
