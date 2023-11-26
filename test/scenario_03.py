@@ -17,11 +17,14 @@ login_ol(driver,"admin")
 driver.implicitly_wait(5)
 edtProfil = driver.find_element("xpath",'//*[@id="ctl09_ctl00_imgProfile"]')
 edtProfil.click()
+btnLogout = driver.find_element("xpath",'//*[@id="ctl09_ctl00_lblExitTest"]')
+btnLogout.click()
 link = driver.current_url
-if "Login.aspx" in link:
+if "xLogin.aspx" in link:
     log_at("scenario_03","login ekranı dönüş",1)
 else:
     log_at("scenario_03","login ekranı dönüş",0)
+    print("başarısız")
     driver.save_screenshot("./fail/"+"scenario_03_"+time.strftime('%Y-%m-%d %H:%M:%S')+".png")
 
 time.sleep(3)
