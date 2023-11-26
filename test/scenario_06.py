@@ -10,7 +10,6 @@ from selenium.webdriver.chrome.options import Options
 with open('./panconn.json', 'r') as file:
     config_data = json.load(file)
 password = config_data['pass_admin']
-print(password)
 
 #WebDriver tanımlanıyor
 chrome_options = Options()
