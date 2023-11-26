@@ -14,7 +14,7 @@ service = Service("../chromedriver")
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 login_ol(driver,"admin")
-driver.implicitly_wait(10)
+driver.implicitly_wait(5)
 edtProfil = driver.find_element("xpath",'//*[@id="ctl09_ctl00_imgProfile"]')
 edtProfil.click()
 
